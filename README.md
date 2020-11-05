@@ -39,12 +39,12 @@
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-### Django Workflow (Backend) :
+#### Django Workflow (Backend) :
 
-### Registration/Reservation (Frontend) :
+#### Registration/Reservation (Frontend) :
 
-### Diaglog flow (Chatbot) :
+#### Diaglog flow (Chatbot) :
 
-### Rule-based Engine / GA (Algorithm) :
+#### Rule-based Engine / GA (Algorithm) :
 
 ---
