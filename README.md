@@ -15,7 +15,7 @@
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
 | Official Full Name  | Work Items (Who Did What) | Email (Optional) |
-| :------------ |:---------------:| :-----| :-----|
+| :------------ |:-----| :-----|
 | Hunuwar Hadi |  |  |
 | Hamsi |  | |
 | Kevin Chng Jun Yan |  | kevinchng@hotmail.com |
