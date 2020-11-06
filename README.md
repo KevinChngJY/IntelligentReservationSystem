@@ -30,6 +30,8 @@
 
 
 ### To run the system in local machine
+#### Ngrok Activation : [a link](https://github.com/user/repo/blob/branch/ngrok.md)
+
 #### Facebook Authentication
 
 #### Google Map Platform Authentication
