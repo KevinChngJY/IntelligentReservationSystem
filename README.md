@@ -14,11 +14,11 @@
 ---
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
-| Official Full Name  | Work Items (Who Did What) | Email (Optional) |
-| :------------ |:----------------| :-----|
-| Januwar Hadi | Rule-based Engine, GA, Database Design |  |
-| Hamsi | Chatbot,Django-Chatbot Integration, Database Design | |
-| Kevin Chng Jun Yan | Django Backend, Frontend, Database Design | kevinchng@hotmail.com |
+| Official Full Name  | Student Id | Work Items (Who Did What) | Email (Optional) |
+| :------------ |:----------------| :-----|:----------------|
+| Januwar Hadi |  |Rule-based Engine, GA, Database Design |  |
+| Rajamanickam Hamsamalini | S7781643G |Chatbot,Django-Chatbot Integration, Database Design | |
+| Kevin Chng Jun Yan |   |Django Backend, Frontend, Database Design | kevinchng@hotmail.com |
 
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
