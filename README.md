@@ -16,7 +16,7 @@
 
 | Official Full Name  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:-----| :-----|
-| Hunuwar Hadi |  |  |
+| Januwar Hadi |  |  |
 | Hamsi |  | |
 | Kevin Chng Jun Yan |  | kevinchng@hotmail.com |
 
