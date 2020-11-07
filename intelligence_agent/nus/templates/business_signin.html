@@ -1,0 +1,23 @@
+<!-- templates/login.html -->
+
+ {% extends 'base.html' %}
+ {% block title %} Sign in {% endblock %}
+ {% block content %}
+ <div class="row">
+     <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+     	<h3><center>Establishments</h3>
+     	 <button class="btn btn-danger mb-3">
+             <a href="">Login with ID</a>
+         </button>
+         <button class="btn btn-info mb-3">
+             <a href="">Sign Up</a>
+         </button>
+         <h3><center>Users</h3>
+         <button class="btn btn-primary mb-2">
+             <a href="{% url 'nus:begin' 'facebook' %}?key={{ value }}">Login with Facebook
+             </a>
+         </button>
+     </div>
+ </div>
+ </div>
+ {% endblock %}
