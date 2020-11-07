@@ -717,7 +717,8 @@ def webhook(request):
     
     elif action=='get_company_info':
         fulfillmentText = dc.about_company(req, patron,name)
-    
+    elif action=='myreservations':
+        fulfillmentText = dc.myreservations(req, patron,name)
     
     # elif action=='ReduceSeats.ReduceSeats-yes':
     #     fulfillmentText = dc.reduceSeats_yes(req, patron,name)
