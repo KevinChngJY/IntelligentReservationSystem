@@ -85,12 +85,12 @@ This will populate *query* and *reservation* tables with random entries up to 3 
 
 In order to make reservation, patron and establishment identifier must first be obtained. 
 ```
-util.load_table('dummy_pat', 'dummy.db')
+> util.load_table('dummy_pat', 'dummy.db')
 ```
 ![Patrons Table](patrons.png)
 
 ```
-util.load_table('dummy_est', 'dummy.db')
+> util.load_table('dummy_est', 'dummy.db')
 ```
 ![Establishment Table](establishments.png)
 
@@ -98,6 +98,8 @@ Arguments *dummy_pat*, *dummy_est* and *dummy.db* are default patron table name 
 
 From patron and establishment, `Agent` can be invoked. 
 ```
+> from ira import Agent
+>
 > session = '001'
 > intent = 'NewReservation'
 > patron = 'veronicarodriguez750602'
@@ -120,6 +122,10 @@ As IRA offers options, patron chooses one as selection.
 > print(response[1])
 ```
 ![New 2](new2.png)
+
+As IRA returns tuple, the confirmation message is at index 1. 
+
+#### C. Change Existing Reservation
 
 
 #### Z. Rules Builder
