@@ -107,7 +107,7 @@ Session is arbitrary identifier that is unique for each conversation with **ira.
 ```
 > time_in = '20/11/11_12:34'
 > n_person = '2'
-response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
+> response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
 ![New 1](new1.png)
