@@ -17,7 +17,7 @@
 | Official Full Name  | Student Id | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:----------------| :-----|:----------------|
 | Januwar Hadi |  |Rule-based Engine, GA, Database Design |  |
-| Rajamanickam Hamsamalini | S7781643G |Chatbot,Django-Chatbot Integration, Database Design | |
+| Rajamanickam Hamsamalini |  |Chatbot,Django-Chatbot Integration, Database Design | |
 | Kevin Chng Jun Yan |   |Django Backend, Frontend, Database Design | kevinchng@hotmail.com |
 
 ---
