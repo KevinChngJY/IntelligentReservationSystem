@@ -66,9 +66,8 @@ A. Initialization
 In addition to **ira.py** module and configuratio file **config.ini**, there must be a database file. 
 To generate database file run code below:
 
-`>import util`
-
-`>util.init_db()`
+`> import util\n`
+`> util.init_db()`
 
 This generates **dummy.db** database file, and six tables associated to rules engine.  
 This also generates dummy patrons (default is 100 patrons) and establishments (default 5). 
