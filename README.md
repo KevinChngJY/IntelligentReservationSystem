@@ -39,8 +39,26 @@
 #### Diaglogflow Authentication
 
 #### Rules Engine
+
+Rules and its attribute classes are contained in **ira.py**. 
+> `Agent` class handles all interactions with rules.
+> `HouseKeeping` class handles maintenance of resources (e.g. database entries)
+
+Configuration file **config.ini** has link to database (and its tables) as well as rules builder. 
+It may be modified to: 
+1. Configure custom rules or rules order, and
+2. Path to link to different database. 
+
+In addition, there is **util.py** that is useful for initialization and simulation.
+
 A. Initialization
 
+In addition to **ira.py** module and configuratio file **config.ini**, there must be a database file. 
+To generate database file run code below: 
+>`import util`
+>`util.init_db()`
+This generates **dummy.db** database file, and six tables associated to rules engine. 
+Default database and table names may be overridden. 
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
