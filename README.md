@@ -54,16 +54,21 @@ In addition, there is **util.py** that is useful for initialization and simulati
 A. Initialization
 
 In addition to **ira.py** module and configuratio file **config.ini**, there must be a database file. 
-To generate database file run code below: 
-`import util`
-`util.init_db()`
+To generate database file run code below:
+
+>`import util`
+
+>`util.init_db()`
+
 This generates **dummy.db** database file, and six tables associated to rules engine.  
 This also generates dummy patrons (default is 100 patrons) and establishments (default 5). 
 Default database, table names and number of entries may be overridden.
 
 To create simulated data, run code below from **util.py** module. 
-Do take note that the database configuration must match **config.ini** file. 
-'util.create_dummy_appointments()'
+Do take note that the database configuration must match **config.ini** file as it will actually invoke `Agent` to create entries in database. 
+
+`util.create_dummy_appointments()`
+
 This will populate *query* and *reservation* tables with random entries up to 3 days. 
 
 
