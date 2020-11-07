@@ -61,7 +61,7 @@ Once installation completed, activate the virtual environment.
 `$ conda activate <env>`
 
 
-A. Initialization
+##### A. Initialization
 
 In addition to **ira.py** module and configuratio file **config.ini**, there must be a database file. 
 To generate database file run code below:
@@ -74,11 +74,32 @@ This also generates dummy patrons (default is 100 patrons) and establishments (d
 Default database, table names and number of entries may be overridden.
 
 To create simulated data, run code below from **util.py** module. 
-Do take note that the database configuration must match **config.ini** file as it will actually invoke `Agent` to create entries in database. 
-
-`util.create_dummy_appointments()`
-
+Do take note that the database configuration must match **config.ini** file (if default names are overridden) as it will actually invoke `Agent` to create entries in database. See section Z (under DB) for more explanation. 
+```
+> util.create_dummy_appointments()
+```
 This will populate *query* and *reservation* tables with random entries up to 3 days. 
+
+##### B. Create New Reservation
+
+
+
+##### Z. Rules Builder
+
+Configuration file **config.ini** has six sections: 
+* DB
+Link (relative path from **ira.py**) to database file, and how each table is name.
+* Information
+FAQ (or otherwise business information) for chatbot knowledge base
+* NewReservation
+Intent name and rule sequence for new reservation
+* ChangeReservation
+Intent name and rule sequence for change of existing reservation
+* CancelReservation
+Intent name and rule sequence for cancellation of existing reservation
+* CheckReservation
+Intent name and rule for checking of reservation history
+
 
 
 ---
