@@ -1,10 +1,10 @@
 {
   "type": "service_account",
   "project_id": "ira-lmam",
-  "private_key_id": "e04216b7b1c67a9502966d41a49c455d8159e784",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC45PzIU8XKNqdN\nbdscc1OFLQoywzcbPzQqgWtKiZwDoSmM9jcIkIiffV/qmamjVJp37+PfLs1O7f8x\nQ1pW9l114WhvpiR0TBIjXyojlZjUrVvOXmnVevbBQWthpcnPYB5KYKzIcISKPpeU\nBmxSgLtuEyCadxWNcBVEosfppIyBO2p4+ouQ08Z+wW22Bqaa9ym2h7+D2eFxp7Qg\nocRFERNWTarOdSSNTVIxdpNUU2T/BKQpjv+svWk9Fhg+YvcnqG4WPNbHBz0uv3tN\nBe+A2WcEt3lzV864nlTr99N5ipFQ/9oMfcQNPkxUZJItgUS3KFaGUvHxkiBwTMIF\nFITt8ICtAgMBAAECggEAEYEYT2zi6lB/SUzPtCNU8mQ/tWuW4Xz71tRW0IEzpIJS\n+TXsIuLwFE1d0cuHbF+bmiQ7ags3w7Ozd7n9KQN8+KaE6SENDXeQNgoR5rmIdQYO\njXyRv3S7PLORU3bLItdiNr9tTDKe0am4Vvq+sZbfZ73m1cjVYQUN9mgEziFWbfuF\nIXxwiLFBt9WysSSeSEfyMs12CRHj1AldSnqbK/cD9EzRSIru2Y6IrTyajBaia4Aw\n9Bw/C3lgYPJF5/qIrNpopRYYUReOUH3ghlm/lauXsC0IRsq4x/T64BFE/uAPTRzT\nd7EE+m2AqVh7dRUaE5htXbSiOvQ+eCcjhoVl6hYUHwKBgQDw/jwxO11/js7M1gj5\nLSoLGya0xX08s+S/JALs8gcNrmB5wKCl1xD7w/Ld4kKSMqCuD8uJFxQ48VI61wRG\nLDgf2zjQifXwy/tVwv0TCFCAZ3PfOQ4/SgpanIoaqOcY+j8B2v8MYfVGF87teeM7\n7lijyPrhJnFWVhr8gHsXr7d7jwKBgQDEaHZaSYFRZJ1stTDtCTLzdX7WsT6By/fB\nuizFRSBuCB0nQqz40oZEPc5RAogLgVVQ1yPxt5SF9bXXqIB6LCSiVwrQ0bvkrQbn\nvg18LCeNhadvE5sWeENxxxktRDTijn2mD67CFunqXx0Ra4hy1gj9ZRFD8+T3D0wW\nm8+6YUYSAwKBgD+0NN0ewDxz1562BXE4yyBccQLgIZbmRtVwA4X3BH5NVhtZHB46\nl7a1uYGFyeszjt30Nu1qOGJFCGOdavfRwJRLMt2NWoHoqeulu5hIXl9S+YJMZsO8\nIriJIMijVVN48ybeaQUw79EzgfOsgLDa9Ht3KTpTGyqjYEbW/7LnNC1pAoGANLNW\n9nj8swtNVmrz2tZ6Dmt7gj4C6K8DJr8+3hvjTMLul6dDZGyQzGTNJF2KhZPJgayI\nn4ZD2wIILfqvppiLp+e1JjzwrrZiwPH1ClmKr2WqfJqFJa1VY4Up00SW8CeNvW49\n1SRy1Yl58j+pWC7oMJ3a2SHrUQOQxgw+2+LX+2MCgYB16flDtSlIzt6DesD0ecwO\nAnO6VWpceuFktgufdjA0oezw3hQINGlHF7GkqY2MI8QmiBav+B5XQaEOHNGlPc2P\nmetvHcYqAIGo66+zdLpKHDmq03KJrhgBaafY0QIQNSjIf+KkRlaDu8f6E1d8PQS9\nPIKZN/g/lRPzFeao+Dinjw==\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n-----END PRIVATE KEY-----\n",
   "client_email": "dialogflow-upwwgq@ira-lmam.iam.gserviceaccount.com",
-  "client_id": "114922905058305275828",
+  "client_id": "xxxxxxxxxxxxxxxxxxxxx",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
