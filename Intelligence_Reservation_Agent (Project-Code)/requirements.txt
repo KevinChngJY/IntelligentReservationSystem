@@ -53,4 +53,7 @@ wheel=0.35.1=py_0
 wincertstore=0.2=py38_0
 zeromq=4.3.2=ha925a31_3
 zlib=1.2.11=h62dcd97_4
+django-dialogflow=0.0.4
+dialogflow=1.1.0
+dialogflow-fulfillment=0.4.0
 dialogflow_v2beta1
