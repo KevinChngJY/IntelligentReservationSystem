@@ -441,7 +441,7 @@ def cancel_a_reservation(req, Patron,name):
      scode, msg, step = ira.Agent(session_info, intent_name, Patron, cancel_reservation_intentInfo['businessId']).check_rules()
      print('c1 ',scode, msg, step )
      #agent=['Tuesday 20 October 2020 at 10:00', 'Tuesday 20 October 2020 at 09:40']
-     if len(msg)>0:
+     if (scode=='0' and step=='2'):
          sl=comm.process_suggestion2(msg)
          response_text='Your upcoming reservation slot( s ):\n'+'-'*45+'\n'
          t=1
@@ -451,8 +451,12 @@ def cancel_a_reservation(req, Patron,name):
          response_text+='-'*45+'\n'+' Key your choice (e.g. 1) '
          response_text+='\n'+'-'*45+'\nKey [ m ] to Main menu...'
          cancel_reservation_intentInfo['already_booked_slots']=sl
+     elif (scode=='1' and step=='2'):
+         response_text=msg
+         response_text+='\n'+'-'*45+'\nKey [ m ] to Main menu...'
      else:
          response_text=msg
+         response_text+='\n'+'-'*45+'\nKey [ m ] to Main menu...'
      print('c1:',cancel_reservation_intentInfo)
     
      fulfillmentText = {'fulfillmentText': response_text}
@@ -526,7 +530,7 @@ def change_by_date(req, Patron,name):
      scode, msg, step=ira.Agent(session_info, intent_name, Patron, changeBydate_intentInfo['businessId']).check_rules()
     
      print('change 1: ',scode, msg, step) 
-     if scode=='-1' and step=='1':
+     if (scode=='-1' and step=='1') or (scode=='1' and step=='3'):
          response_text=msg
          response_text+='\n Key [m] to Main menu'
      elif len(msg)>0:
@@ -579,7 +583,7 @@ def ChangeByDate_custom_yes(req, Patron, name):
      if scode=='-1' and step=='1':
          response_text=msg
          response_text+='\n Key [m] to Main menu'
-     elif scode=='1' and step=='1':
+     elif scode=='1' and (step=='1' or step=='2'):
          response_text=msg
          response_text+='\n Key [m] to Main menu'
      elif scode=='0' and step=='2':
@@ -656,7 +660,7 @@ def ChangeByDate_custom_yes_ok_selectlist(req, Patron, name):
          response_text+='-'*45+'\n'+' Key your choice (e.g. 1) '
          response_text+='\n'+'-'*45+'\nKey [ m ] to Main menu...'
          changeBydate_intentInfo['available_slots']=sl
-     elif scode=='1' and (step=='4'or step=='5' or step=='6' or step=='7' or step=='8'):  
+     elif scode=='1' and (step=='4'or step=='5' or step=='6' or step=='7' or step=='8' or step=='9'):  
           response_text=msg
           response_text+='\n Key [ m ] to Main menu....'
      print('changeyes ok list:',changeBydate_intentInfo)
@@ -780,8 +784,38 @@ def about_company(req,Patron,name) :
      fulfillmentText = {'fulfillmentText': response_text}
      return fulfillmentText 
     
- 
-
+def myreservations(req,Patron, name):
+    data=comm.load_upcoming_table(Patron)
+    print(data)
+    response_text=''
+    b=[]
+    tag=''
+    z=len(data)
+    if z>3: 
+        z=3
+    if z>0 and z<4:
+        response_text+='\n Your upcoming reservation status...\n '+'-'*45+'\n'
+        for i in range(z):
+            b=list(data[i])
+            for i in range(len(b)):
+                if i==0:
+                    tag='\nEstablishment: '
+                elif i==1:
+                    tag='No. of Person(s) :'
+                elif i==2:
+                    tag='Time in :'
+                    b[i]=datetime.datetime.strptime(b[i],'%y/%m/%d_%H:%M')
+                    b[i]=datetime.datetime.strftime(b[i],'%y/%m/%d at %H:%M')
+                elif i==3:
+                    tag='Status :'
+                response_text+=tag+b[i]+'\n '
+        response_text+='\n'
+    elif z==0:
+        response_text+='\n'+'-'*45+'\nTo do reservation ....'
+    response_text+='\nKey [m] to Main menu...'
+    fulfillmentText = {'fulfillmentText': response_text} 
+    return fulfillmentText
+    
 #Function: process to change a reservation by adding more seats request
 
 # def add_more_seats(req, Patron):
