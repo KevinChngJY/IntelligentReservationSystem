@@ -38,6 +38,10 @@
 
 #### Diaglogflow Authentication
 
+#### Rules Engine
+A. Initialization
+
+
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
