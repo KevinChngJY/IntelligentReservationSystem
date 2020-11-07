@@ -112,7 +112,7 @@ Session is arbitrary identifier that is unique for each conversation with **ira.
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![New 1](new1.png)
+![New 1](images/new1.png)
 
 As IRA offers options, patron chooses one as selection.
 
