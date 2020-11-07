@@ -149,7 +149,7 @@ def load_upcoming_table(entity):
     conn=sqlite3.connect(os.path.join(Path(__file__).resolve(strict=True).parent.parent, 'db.sqlite3'))
     db = conn.cursor()
    
-    db.execute("SELECT e.company,n.n_person,n.time_in,n.status FROM nus_reservations n  INNER JOIN nus_establishments e on e.username=n.establishment where n.status!='cancelled' and n.patron=?;",(entity,))
+    db.execute("SELECT e.company,n.n_person,n.time_in,n.status FROM nus_reservations n  INNER JOIN nus_establishments e on e.username=n.establishment where n.status!='cancelled' and n.status!='changed' and n.patron=?;",(entity,))
    
     data=[]
     data=db.fetchall()
@@ -191,6 +191,18 @@ def load_company_details_from_table(entity):
     db = conn.cursor()
     
     db.execute("select company,location,contact, max_cap, open_days, open_time, close_time from nus_establishments where username =?;",(entity,))
+   
+    data=db.fetchall()
+    # print(data)
+    return data
+
+# method to fetch reservations from db
+def load_reservation_details_from_table(Patron):
+    #establishment_list=['AK', 'Cedelee','Starbuck','CoffeeBean','SoupeSpoon']
+    conn=sqlite3.connect(os.path.join(Path(__file__).resolve(strict=True).parent.parent, 'db.sqlite3'))
+    db = conn.cursor()
+    
+    db.execute("SELECT establishment,n_person,time_in,time_out,status FROM nus_reservations where patron =?;",(Patron,))
    
     data=db.fetchall()
     # print(data)
