@@ -88,7 +88,39 @@ In order to make reservation, patron and establishment identifier must first be 
 util.load_table('dummy_pat', 'dummy.db')
 ```
 ![Patrons Table](patrons.png)
-Format: ![Alt Text](url)
+
+```
+util.load_table('dummy_est', 'dummy.db')
+```
+![Establishment Table](establishments.png)
+
+Arguments *dummy_pat*, *dummy_est* and *dummy.db* are default patron table name and default database name. 
+
+From patron and establishment, `Agent` can be invoked. 
+```
+> session = '001'
+> intent = 'NewReservation'
+> patron = 'veronicarodriguez750602'
+> establishment = 'bestplc5637'
+```
+Session is arbitrary identifier that is unique for each conversation with **ira.py**. A conversation may have series of interactions with same session. 
+```
+> time_in = '20/11/11_12:34'
+> n_person = '2'
+response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
+> print(response[1])
+```
+![New 1](new1.png)
+
+As IRA offers options, patron chooses one as selection.
+
+```
+> selection = '20/11/11_12:30'
+> response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
+> print(response[1])
+```
+![New 2](new2.png)
+
 
 #### Z. Rules Builder
 
