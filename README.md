@@ -87,7 +87,7 @@ In order to make reservation, patron and establishment identifier must first be 
 ```
 > util.load_table('dummy_pat', 'dummy.db')
 ```
-![Patrons Table](patrons.png)
+![Patrons Table](images/patrons.png)
 
 ```
 > util.load_table('dummy_est', 'dummy.db')
@@ -121,7 +121,7 @@ As IRA offers options, patron chooses one as selection.
 > response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 > print(response[1])
 ```
-![New 2](new2.png)
+![New 2](images/new2.png)
 
 As IRA returns tuple, the confirmation message is at index 1. 
 
