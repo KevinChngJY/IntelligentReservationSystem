@@ -45,11 +45,21 @@ Two classes that may be used are:
 1.  `Agent` class that handles all interactions with rules.
 2.  `HouseKeeping` class that handles maintenance of resources (e.g. database entries)
 
-Configuration file **config.ini** has link to database (and its tables) as well as rules builder. As a text file, It may be modified to: 
+Configuration file **config.ini** has link to database (and its tables) as well as rules builder. 
+As a text file, It may be modified to: 
 1. Configure custom rules or rules order, and
 2. Path to link to different database. 
 
-In addition, there is **util.py** that is useful for initialization and simulation.
+In addition, there is **util.py** that is useful for initialization and simulation. 
+
+Dependencies: Install packages as listed in **requirements.txt** to either virtual environment or what not. Type line below in command line to create *Anaconda* virtual environment as well as installing required packages. Replace `<env>` with your desired virtual environment name. 
+
+>`$ conda create --name <env> --file requirements.txt -y`
+
+Once installation completed, activate the virtual environment. 
+
+>`$ conda activate <env>`
+
 
 A. Initialization
 
@@ -57,7 +67,6 @@ In addition to **ira.py** module and configuratio file **config.ini**, there mus
 To generate database file run code below:
 
 >`import util`
-
 >`util.init_db()`
 
 This generates **dummy.db** database file, and six tables associated to rules engine.  
@@ -67,7 +76,7 @@ Default database, table names and number of entries may be overridden.
 To create simulated data, run code below from **util.py** module. 
 Do take note that the database configuration must match **config.ini** file as it will actually invoke `Agent` to create entries in database. 
 
-`util.create_dummy_appointments()`
+>`util.create_dummy_appointments()`
 
 This will populate *query* and *reservation* tables with random entries up to 3 days. 
 
