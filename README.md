@@ -61,12 +61,13 @@ Once installation completed, activate the virtual environment.
 `$ conda activate <env>`
 
 
-##### A. Initialization
+#### A. Initialization
 
-In addition to **ira.py** module and configuratio file **config.ini**, there must be a database file. 
+In addition to **ira.py** module and configuration file **config.ini**, there must be a database file. 
 To generate database file run code below:
 ```
 > import util
+>
 > util.init_db()
 ```
 This generates **dummy.db** database file, and six tables associated to rules engine.  
@@ -80,11 +81,16 @@ Do take note that the database configuration must match **config.ini** file (if 
 ```
 This will populate *query* and *reservation* tables with random entries up to 3 days. 
 
-##### B. Create New Reservation
+#### B. Create New Reservation
 
+In order to make reservation, patron and establishment identifier must first be obtained. 
+```
+util.load_table('dummy_pat', 'dummy.db')
+```
+![Patrons Table](patrons.png)
+Format: ![Alt Text](url)
 
-
-##### Z. Rules Builder
+#### Z. Rules Builder
 
 Configuration file **config.ini** has six sections: 
 * DB
@@ -99,6 +105,10 @@ Intent name and rule sequence for change of existing reservation
 Intent name and rule sequence for cancellation of existing reservation
 * CheckReservation
 Intent name and rule for checking of reservation history
+
+The last four sections enable a separation of business logic from system. 
+List of rules that business user may choose to build a sequence is explained below: 
+
 
 
 
