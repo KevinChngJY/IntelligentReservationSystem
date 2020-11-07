@@ -41,11 +41,11 @@
 #### Rules Engine
 
 Rules and its attribute classes are contained in **ira.py**. 
-> `Agent` class handles all interactions with rules.
-> `HouseKeeping` class handles maintenance of resources (e.g. database entries)
+Two classes that may be used are: 
+1.  `Agent` class that handles all interactions with rules.
+2.  `HouseKeeping` class that handles maintenance of resources (e.g. database entries)
 
-Configuration file **config.ini** has link to database (and its tables) as well as rules builder. 
-It may be modified to: 
+Configuration file **config.ini** has link to database (and its tables) as well as rules builder. As a text file, It may be modified to: 
 1. Configure custom rules or rules order, and
 2. Path to link to different database. 
 
@@ -55,10 +55,17 @@ A. Initialization
 
 In addition to **ira.py** module and configuratio file **config.ini**, there must be a database file. 
 To generate database file run code below: 
->`import util`
->`util.init_db()`
-This generates **dummy.db** database file, and six tables associated to rules engine. 
-Default database and table names may be overridden. 
+`import util`
+`util.init_db()`
+This generates **dummy.db** database file, and six tables associated to rules engine.  
+This also generates dummy patrons (default is 100 patrons) and establishments (default 5). 
+Default database, table names and number of entries may be overridden.
+
+To create simulated data, run code below from **util.py** module. 
+Do take note that the database configuration must match **config.ini** file. 
+'util.create_dummy_appointments()'
+This will populate *query* and *reservation* tables with random entries up to 3 days. 
+
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
