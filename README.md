@@ -103,7 +103,7 @@ In order to make reservation, patron and establishment identifier must first be 
 ```
 > util.load_table('dummy_pat', 'dummy.db')
 ```
-![Patrons Table](images/patrons.png)
+![Patrons Table](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/patrons.png)
 
 ```
 > util.load_table('dummy_est', 'dummy.db')
@@ -128,7 +128,7 @@ Session is arbitrary identifier that is unique for each conversation with **ira.
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![New 1](images/new1.png)
+![New 1](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/new1.png)
 
 As IRA offers options, patron chooses one as selection.
 
@@ -137,7 +137,7 @@ As IRA offers options, patron chooses one as selection.
 > response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 > print(response[1])
 ```
-![New 2](images/new2.png)
+![New 2](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/new2.png)
 
 As IRA returns tuple, the confirmation message is at index 1. 
 
@@ -173,8 +173,7 @@ List of rules that business user may choose to build a sequence is explained bel
 
 #### Registration/Reservation (Frontend) :
 
-#### Diaglog flow (Chatbot) :
-[Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
+#### Diaglog flow (Chatbot) : [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
 
 #### Rule-based Engine / GA (Algorithm) :
