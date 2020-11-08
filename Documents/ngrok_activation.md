@@ -1,10 +1,10 @@
-## Ngrok Activation
+# Ngrok Activation
 
-# What is Ngrok?
+## What is Ngrok?
 Ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels. <br>
 Overview : https://ngrok.com/product
 
-# How to activate Ngrok?
+## How to activate Ngrok?
 1) Step 1: Download ngrok <br>
 https://ngrok.com/download
 
