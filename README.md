@@ -124,7 +124,7 @@ This search space, is exclusive for each establishment's subloc. The bottom of t
 
 B. Genetic Algorithm (GA)
 
-![Searcher 1](Images/searcher1.png)
+![Searcher 1](Images/genetic1.png)
 
 GA is used for inclusive scenario (e.g. general entry to a premise). 
 The search space for each establishment is in 2D grid. 
@@ -132,7 +132,7 @@ In order to avoid calculating all possible permutation, GA is used.
 Figure below depicts the usage of fitness function that sums up fitness score. 
 The fitness score is flipped to negative if threshold (maximum capacity) is exceeded. 
 
-![Searcher 2](Images/searcher2.png)
+![Searcher 2](Images/genetic2.png)
 
 The actual implementation's *n population* is the total request on a particular day. 
 Default batch size is 20. Default *crossover* and *selection* point are at half or batch size. 
