@@ -2,15 +2,15 @@
 ---
 
 ## SECTION 1 : PROJECT TITLE
-## Intelligent Reservation System
+## INTELLIGENT RESERVATION SYSTEM
 
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Profile.png"
      style="float: left; margin-right: 0px;" />
 
 ---
 
-## SECTION 2 : Poster
-## Intelligent Reservation System
+## SECTION 2 : POSTER
+## INTELLIGENT RESERVATION SYSTEM
 
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Poster.jpeg"
      style="float: left; margin-right: 0px;" />
