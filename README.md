@@ -121,12 +121,12 @@ In order to do anything with a reservation, *patron* and *establishment* identif
 ```
 > util.load_table('dummy_pat', 'dummy.db')
 ```
-![Patrons Table](patrons.png)
+![Patrons Table](Images/patrons.png)
 
 ```
 > util.load_table('dummy_est', 'dummy.db')
 ```
-![Establishment Table](establishments.png)
+![Establishment Table](Images/establishments.png)
 
 Arguments *dummy_pat*, *dummy_est* and *dummy.db* are default patron table name and default database name. 
 
