@@ -33,7 +33,7 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 [![INTELLIGENT EMPLOYEE SCHEDULER]()
 
 ---
-## SECTION 5 : USER GUIDE
+## SECTION 5 : USER GUIDE to run the integrated system in local machine
 
 
 ### To run the system in local machine
@@ -67,8 +67,8 @@ In Dialogflow, select fulfilments and enable, webhook as
 ![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/webhook.png) 
 
  
-
-
+---
+## SECTION 6 : USER GUIDE to understand and run the rule base Engine
 #### Rules Engine
 
 Rules and its attribute classes are contained in **ira.py**. 
@@ -182,7 +182,7 @@ List of rules that business user may choose to build a sequence is explained bel
 
 
 ---
-## SECTION 6 : PROJECT REPORT / PAPER
+## SECTION 7 : PROJECT REPORT / PAPER
 
 #### Django Workflow (Backend) :
 
