@@ -38,7 +38,7 @@
 
 #### Diaglogflow Authentication
 
-### Dialogflow – Google Authentication
+##### Dialogflow – Google Authentication
 
 In Dialogflow's console, go to settings and under the general tab, you'll see the project ID section with a Google Cloud link to open the Google Cloud console. Open Google Cloud.
 In the Cloud console, go to the menu icon ☰ > APIs & Services > Credentials
@@ -55,7 +55,7 @@ In settings.py in intelligent_agent folder, include
 
 This json authentication file enables updating the entity values in dialogflow from the app.
 
-### Dialogflow – To enable webhook
+##### Dialogflow – To enable webhook
 In Dialogflow, select fulfilments and enable, webhook as 
 ![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/webhook.png) 
 
