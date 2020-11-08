@@ -10,7 +10,6 @@
 ---
 
 ## SECTION 2 : POSTER
-## INTELLIGENT RESERVATION SYSTEM
 
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Poster.jpeg"
      style="float: left; margin-right: 0px;" />
