@@ -7,9 +7,14 @@
 ### Step 2 Go into Console
 
 
+### Step 3 Create New Project
 
-### Step 3 Enable API Service
-
-
+### Step 4 Enable API Service for your New Project
+MAP Static API      : https://console.cloud.google.com/marketplace/product/google/static-maps-backend.googleapis.com?project=irs-nus
+MAP JavaScript API  : https://console.cloud.google.com/marketplace/product/google/maps-backend.googleapis.com?project=irs-nus
 
 ### Step 4 Set up API Credential
+Go To Credentials, create API Key, select HTTP referrers (web sites), paste your ngrok domain as follows:
+![Googlemap3]
+
+(Remember to put * infront and behind your ngrok domain)
