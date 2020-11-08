@@ -627,5 +627,7 @@ Action returns string message as response.
 GUI Workflow and functionalities : [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
 Summary Report : Business Case, Product Plan, Market Research, System Design/Model, System Development & Implementation in tools
-[Power Point Slide](f)
+[Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
+
+
 ---
