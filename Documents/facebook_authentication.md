@@ -5,8 +5,8 @@
 https://developers.facebook.com/ <br>
   
 ### Step 2 : Create New Apps <br>
-<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/facebook1.pnge" width="50%" height="50%">
-![Facebool2](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Facebook2.png){:height="50%" width="50%"} <br>
+![Facebool1](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/facebook1.png |width=100px)<br>
+![Facebool2](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Facebook2.png |width=100px)<br>
 
 ### Step 3 : 
 
