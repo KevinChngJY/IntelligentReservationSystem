@@ -155,7 +155,7 @@ In any case where the `response` deviates from what shown in this document, refe
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![New 1](images/new1.png)
+![New 1](Images/new1.png)
 
 As IRA offers options, patron chooses one as selection.
 
@@ -164,7 +164,7 @@ As IRA offers options, patron chooses one as selection.
 > response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 > print(response[1])
 ```
-![New 2](images/new2.png)
+![New 2](Images/new2.png)
 
 As IRA returns tuple, the confirmation message is at index 1. 
 
@@ -181,7 +181,7 @@ Changing reservation requires matching intent as in **config.ini**. Default is *
 > response = Agent(session, intent, patron, establishment).check_rules()
 > print(response[1])
 ```
-![Change 1](images/change1.png)
+![Change 1](Images/change1.png)
 
 Patrons would choose which existing reservation he/she would like to change. Option (1) is the one created from previous step (section B). Pass the selection as keyword argument *selection*.   
 ```
@@ -189,7 +189,7 @@ Patrons would choose which existing reservation he/she would like to change. Opt
 > response = Agent(session, intent, patron, establishment, selection=selection1).check_rules()
 > print(response[1])
 ```
-![Change 2](images/change2.png)
+![Change 2](Images/change2.png)
 
 IRA asks time and number of persons the reservation would need to be changed for. Pass them as respective keyword arguments. 
 ```
@@ -198,7 +198,7 @@ IRA asks time and number of persons the reservation would need to be changed for
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![Change 3](images/change3.png)
+![Change 3](Images/change3.png)
 
 IRA responds with list of time slots, and patron to choose from the proposed list. 
 
@@ -207,7 +207,7 @@ IRA responds with list of time slots, and patron to choose from the proposed lis
 > response = Agent(session, intent, patron, establishment, selection=selection2).check_rules()
 > print(response[1])
 ```
-![Change 4](images/change4.png)
+![Change 4](Images/change4.png)
 
 IRA responds with success message. 
 
@@ -223,7 +223,7 @@ Cancelling reservation requires matching intent as in **config.ini**. Default is
 > response = Agent(session, intent, patron, establishment).check_rules()
 > print(response[1])
 ```
-![Cancel 1](images/cancel1.png)
+![Cancel 1](Images/cancel1.png)
 
 IRA responds with list of existing reservations. Patron is to choose which to cancel.
 ```
@@ -231,7 +231,7 @@ selection = '20/11/11_13:00'
 response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 print(response[1])
 ```
-![Cancel 2](images/cancel2.png)
+![Cancel 2](Images/cancel2.png)
 
 IRA confirms that reservation has been successfully cancelled. 
 
@@ -250,7 +250,7 @@ Establishments without sublocs accept ballots at least one day in advance. In or
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![Ballot 1](images/ballot1.png)
+![Ballot 1](Images/ballot1.png)
 
 IRA responds with suggestion that fits into establishment's one time slot. 
 ```
@@ -258,7 +258,7 @@ selection = '20/11/12_12:00'
 response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 print(response[1])
 ```
-![Ballot 2](images/ballot2.png)
+![Ballot 2](Images/ballot2.png)
 
 As patron confirms with *selection*, IRA sends receipt message for acceptance of request. See section G for detail on how the request is confirmed or rejected. 
 
@@ -271,14 +271,14 @@ Alternatively, patron may indicate *time_out* for a request for block of multipl
 > response = Agent(session, intent, patron, establishment, time_in=time_in, time_out=time_out, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![Ballot 3](images/ballot3.png)
+![Ballot 3](Images/ballot3.png)
 
 ```
 > selection = '20/11/12_12:30'
 > response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 > print(response[1])
 ```
-![Ballot 4](images/ballot4.png)
+![Ballot 4](Images/ballot4.png)
 
 
 #### F. Waitlist Reservation Change and Cancellation
@@ -292,7 +292,7 @@ Once a successful request is submitted, waitlisted request status is indicated a
 ```
 > util.load_table('dummy_rsv', 'dummy.db')
 ```
-![On Hold](images/on_hold.png)
+![On Hold](Images/on_hold.png)
 
 In order to handle waitlisted request, a service must be subscribed to run periodically (daily). It is for an algorithm to assign each waitlisted request a confirmation or rejection. This is where `HouseKeeping` class is useful. 
 ```
@@ -300,9 +300,9 @@ In order to handle waitlisted request, a service must be subscribed to run perio
 > 
 > HouseKeeping().genetic_algorithm_check(all_days=True, plot=True)
 ```
-![GA1](images/ga1.png)
-![GA2](images/ga2.png)
-![GA3](images/ga3.png)
+![GA1](Images/ga1.png)
+![GA2](Images/ga2.png)
+![GA3](Images/ga3.png)
 
 If *all_days* set to `True`, the algorithm will run for all entries in the reservation table. If `False`, it will only run for the next business day. Default `False`. 
 If *plot* is set to `True`, it will print the progress and plot fitness and other metrics. Default `False`. 
@@ -311,7 +311,7 @@ Refer to section H for more details.
 ```
 > util.load_table('dummy_rsv', 'dummy.db')
 ```
-![Unsuccessful](images/unsuccessful.png)
+![Unsuccessful](Images/unsuccessful.png)
 
 If the algorithm finds solution, each request will be reassigned from *on-hold* to as either *confirmed* or *unsuccessful*. Otherwise, all reservation on that day will be assigned as *walk-in*. 
 
@@ -329,12 +329,12 @@ The report is stored in reservation report table
 ```
 > util.load_table('dummy_rsv_report', 'dummy.db')
 ```
-![Rsvp Rep 1](images/rsvrep1.png)
+![Rsvp Rep 1](Images/rsvrep1.png)
 
 Source *ga* indicates that the report is generated by `HouseKeeping().genetic_algorithm_check()`, *sl* indicates `HouseKeeping().linear_check()`.
 Entries in *hourly* column are hourly outlook, in json string format. Each may be tabulated as shown below.   
 
-![Rsvp Rep 2](images/rsvrep2.png)
+![Rsvp Rep 2](Images/rsvrep2.png)
 
 
 #### I. Query Report & Reservation Status Check
@@ -349,7 +349,7 @@ Below is sample of what query report looks like.
 ```
 > util.load_table('dummy_qry_report', 'dummy.db')
 ```
-![Query Report](images/qryrep.png)
+![Query Report](Images/qryrep.png)
 
 *n_total* indicates the number of queries an establishment receive in a day. 
 Values in *DuplicateExist*, *OversizedGroup*, *PlaceNotAvail*, and so fort indicates percentage. 
@@ -369,7 +369,7 @@ Patrons may use *CheckReservation* intent to check for their reservation status.
 > response = Agent(session, intent, patron, establishment).check_rules()
 > print(response[1])
 ```
-![Rsvp Check](images/check.png)
+![Rsvp Check](Images/check.png)
 
 IRA would give an insight in case the waitlisted reservation eventually becomes *unsuccessful*. It advises patron the alternatives time for walk-in.  
 
