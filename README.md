@@ -72,7 +72,9 @@ In Dialogflow, select fulfilments and enable, webhook as
 
  
 ---
-## SECTION 6 : USER GUIDE to understand and run the rule base Engine
+## SECTION 6 : USER GUIDE TO RUN RULES ENGINE
+Other than running the integrated system in local host, you are also allowed to merely run our rule engine for you to understand the mechanism behind our scheduling process.
+
 #### Rules Engine
 
 Rules and its attribute classes are contained in **ira.py**. 
