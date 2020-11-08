@@ -57,3 +57,6 @@ django-dialogflow=0.0.4
 dialogflow=1.1.0
 dialogflow-fulfillment=0.4.0
 dialogflow_v2beta1
+django
+social-auth-app-django
+
