@@ -20,4 +20,9 @@ Go to (Project Path)> nus > Open view.py,
 Search for ngrok_address, put your own ngrok domain :<br>
 ![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/configure_django3.png) 
 
+Go to (Project Path)> nus >templates>map.html
+Search for https://maps.googleapis.com/maps/api/, then replace your google map api key into the link (refer to Step 6 in [Google Map Authentication](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/google_map_platform_authentication.md)<br>
+![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/configure_django4.png) 
+
+
 Complete!
