@@ -71,7 +71,79 @@ In your Anaconda prompt,
 ## SECTION 7 : USER GUIDE TO RUN RULES ENGINE
 Other than running the integrated system in local host, you are also allowed to merely run our rule engine for you to understand the mechanism behind our scheduling process.
 
+### Rules Engine  & Assignment System:  
+
 #### Rules Engine
+
+Rules Engine is structured as to separate business logic from the IT system. 
+Business logic and database configuration may be modified in **config.ini**.  
+
+Business logic goes by intent. Each intent has it own business logic rules sequence. 
+Sequence is numbered from 1 and by increment of 1. 
+
+\# = <Rule>?<Action-True>:<Action-False>
+
+If a Rule executes `True`, <Action-True> will be returned, <Action-False> is otherwise.  
+If an <Action> is not stated, IRA will proceed to execute next rule. 
+If there is an integer in place of <Action>, execution will jump to skip to as many times as the integer number.  
+
+Refer to section K for example. 
+
+IT user only needs to interact with `Agent` class to access the rules engine. 
+`Agent` class accept four positional arguments: *session*, *intent*, *patron*, *establishment*
+*patron* and *establishment* information may be obtained from patron and establishment tables. 
+*intent* must match section in **config.ini**.  
+Session (*session*) is arbitrary identifier that is unique for each conversation with **ira.py**. 
+A conversation may have series of interactions with same session. 
+Keyword arguments *time_in* and *n_person* are to indicate what time and number of guests patron would like the reservation for.  
+Subsequent interaction requires contextual *selection* keyword argument. 
+
+
+#### Assignment System: 
+
+A. Searcher
+
+The `Searcher` class is used for exclusive scenarios (e.g. restaurants). 
+It bins patron's `time_in` request in a location in search space (the stacked cubes). 
+The location is the a small cube (time slot 4, day 1, week 1), as shown in picture in example below. 
+
+![Searcher 1](images/searcher1.png)
+
+Distance along time slot axis costs less that day axis that costs less than week axis. 
+This is in order to give preference (bias) to slots as compared to days as compared to weeks. 
+
+If time slot 4, day 1, week 1 (4/1/1) is available, the ideal situation is reached. 
+Nevertheless, `Searcher` still captures all locations that is under cost threshold -- *thresh*, then sort it cost-wise from low to high. 
+The sorted locations is what patrons receive as proposed time slots. It is when the rules action `OfferSlots` is invoked. 
+
+![Searcher 2](images/searcher2.png)
+
+In case when, certain locations already filled up (ones that blacked out), patrons will receive time slot offer most relevant (close) to their request. 
+In example picture above, `Searcher` will propose 5/1/1, 4/2/1, 4/2/2, 4/3/1, ... (from lowest to highest cost). 
+This search space, is exclusive for each establishment's subloc. The bottom of the stacked cubes are greyed out to indicate that they are not open on that day. 
+
+
+B. Genetic Algorithm (GA)
+
+![Searcher 1](images/searcher1.png)
+
+GA is used for inclusive scenario (e.g. general entry to a premise). 
+The search space for each establishment is in 2D grid. 
+In order to avoid calculating all possible permutation, GA is used. 
+Figure below depicts the usage of fitness function that sums up fitness score. 
+The fitness score is flipped to negative if threshold (maximum capacity) is exceeded. 
+
+![Searcher 2](images/searcher2.png)
+
+The actual implementation's *n population* is the total request on a particular day. 
+Default batch size is 20. Default *crossover* and *selection* point are at half or batch size. 
+Default *crossover rate* and *mutation rate* is one quarter.
+Maximum generation is 1000, however, early termination (convergence) is allowed. 
+Convergence is defined to have been achieved if at least half of maximum generation have been executed, and none of its last fitness scores is negative, and 95% of batch member are identical.    
+
+---
+
+#### User Guide
 
 Rules and its attribute classes are contained in **ira.py**. 
 Two classes that may be used are: 
@@ -145,6 +217,7 @@ It is stored as json string in the database.
 > establishment = 'bestplc5637'
 ```
 Session (*session*) is arbitrary identifier that is unique for each conversation with **ira.py**. A conversation may have series of interactions with same session. Keyword arguments *time_in* and *n_person* are to indicate what time and number of guests patron would like the reservation for.  
+
 **IMPORTANT:** Please ensure that the **time_in** is a future time (preferably few days in future and within business hours as default rules sequence has such requirements). 
 In any case where the `response` deviates from what shown in this document, refer to section K and L for explanation.  
 
