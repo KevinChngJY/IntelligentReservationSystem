@@ -120,7 +120,7 @@ In order to do anything with a reservation, *patron* and *establishment* identif
 ```
 > util.load_table('dummy_pat', 'dummy.db')
 ```
-![Patrons Table](patrons.png)
+![Patrons Table](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/patrons.png)
 
 ```
 > util.load_table('dummy_est', 'dummy.db')
