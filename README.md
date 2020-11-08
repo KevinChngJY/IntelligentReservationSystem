@@ -174,7 +174,7 @@ List of rules that business user may choose to build a sequence is explained bel
 #### Registration/Reservation (Frontend) :
 
 #### Diaglog flow (Chatbot) :
-[embed]https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Intelligent%20reservation%20agent%20-%20Bot.pdf[/embed]
+[Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
 
 #### Rule-based Engine / GA (Algorithm) :
