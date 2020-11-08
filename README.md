@@ -27,6 +27,7 @@ Agent interacts with patrons in real-time through a chatbot. Interaction may be 
 Every hit (a request: new/change/cancellation/query) could be registered. At the end of a period, a report will be produced. From the report, various analytical and intelligent approaches may be used to understand patron/market behaviour (Knowledge Discovery). Beyond pandemic, the solution may continue to provide business value as it may be configured to original capacity or even an expansion of business. 
 
 ---
+
 ## SECTION 4 : CREDITS / PROJECT CONTRIBUTION
 
 | Official Full Name  |  Work Items (Who Did What) | Email (Optional) |
@@ -38,7 +39,11 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 ---
 ## SECTION 5 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![INTELLIGENT EMPLOYEE SCHEDULER]()
+### Overview
+[![Commercial Video](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/commercialvideo.png)](https://www.youtube.com/watch?v=Dh6HqF-42vk&feature=youtu.be)
+
+### IRA Workflow
+[![IRA Chatbot](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/chatbot1.png)](https://www.youtube.com/watch?v=PFnCljCjR_k)
 
 ---
 ## SECTION 6 : USER GUIDE TO RUN THE INTEGRATED SYSTEM IN LOCAL MACHINE
@@ -623,5 +628,10 @@ Action returns string message as response.
 ---
 ## SECTION 8 : PROJECT REPORT / PAPER
 
+GUI Workflow and functionalities : [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
+
+Summary Report : Business Case, Product Plan, Market Research, System Design/Model, System Development & Implementation in tools
 [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
+
+---
