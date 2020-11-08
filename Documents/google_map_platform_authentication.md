@@ -14,7 +14,7 @@
 MAP Static API      : https://console.cloud.google.com/marketplace/product/google/static-maps-backend.googleapis.com?project=irs-nus
 MAP JavaScript API  : https://console.cloud.google.com/marketplace/product/google/maps-backend.googleapis.com?project=irs-nus
 
-### Step 4 Set up API Credential<br>
+### Step 5 Set up API Credential<br>
 Go To Credentials, create API Key, select HTTP referrers (web sites), paste your ngrok domain as follows: <br>
 ![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/google_map3.png) 
 
