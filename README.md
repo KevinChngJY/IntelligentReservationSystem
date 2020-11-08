@@ -21,11 +21,11 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 ---
 ## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
-| Official Full Name  | Student Id | Work Items (Who Did What) | Email (Optional) |
-| :------------ |:----------------| :-----|:----------------|
-| Januwar Hadi |  |Rule-based Engine, GA, Database Design |  |
-| Rajamanickam Hamsamalini |  |Chatbot,Django-Chatbot Integration, Database Design | chamsamalini@gmail.com |
-| Kevin Chng Jun Yan |   |Django Backend, Frontend, Database Design | kevinchng@hotmail.com |
+| Official Full Name  |  Work Items (Who Did What) | Email (Optional) |
+| :------------ | :-----------------------|:----------------|
+| Januwar Hadi | Rule-based Engine, GA, Database Design |  |
+| Rajamanickam Hamsamalini | Chatbot,Django-Chatbot Integration, Database Design | chamsamalini@gmail.com |
+| Kevin Chng Jun Yan | Django Backend, Frontend, Database Design | kevinchng@hotmail.com |
 
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
