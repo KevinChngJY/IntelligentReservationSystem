@@ -33,10 +33,14 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 [![INTELLIGENT EMPLOYEE SCHEDULER]()
 
 ---
-## SECTION 5 : USER GUIDE to run the integrated system in local machine
+## SECTION 5 : USER GUIDE TO RUN THE INTEGRATED SYSTEM IN LOCAL MACHINE
 
+In order to run integrated system in local machine, you have to 
 
-### To run the system in local machine
+1) Setup "ngrok" for securing URL to your localhost server through any NAT or firewall.
+2) Enable "Facebook Authentication", "Google Map Platform Authentication" and "Diaglowflow Google Authentication"
+3) Install required packages for your backend django
+
 #### Ngrok Activation : [a link](https://github.com/user/repo/blob/branch/ngrok.md)
 
 #### Facebook Authentication
