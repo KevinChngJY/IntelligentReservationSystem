@@ -106,7 +106,7 @@ The `Searcher` class is used for exclusive scenarios (e.g. restaurants).
 It bins patron's `time_in` request in a location in search space (the stacked cubes). 
 The location is the a small cube (time slot 4, day 1, week 1), as shown in picture in example below. 
 
-![Searcher 1](images/searcher1.png)
+![Searcher 1](Images/searcher1.png)
 
 Distance along time slot axis costs less that day axis that costs less than week axis. 
 This is in order to give preference (bias) to slots as compared to days as compared to weeks. 
@@ -115,7 +115,7 @@ If time slot 4, day 1, week 1 (4/1/1) is available, the ideal situation is reach
 Nevertheless, `Searcher` still captures all locations that is under cost threshold -- *thresh*, then sort it cost-wise from low to high. 
 The sorted locations is what patrons receive as proposed time slots. It is when the rules action `OfferSlots` is invoked. 
 
-![Searcher 2](images/searcher2.png)
+![Searcher 2](Images/searcher2.png)
 
 In case when, certain locations already filled up (ones that blacked out), patrons will receive time slot offer most relevant (close) to their request. 
 In example picture above, `Searcher` will propose 5/1/1, 4/2/1, 4/2/2, 4/3/1, ... (from lowest to highest cost). 
@@ -124,7 +124,7 @@ This search space, is exclusive for each establishment's subloc. The bottom of t
 
 B. Genetic Algorithm (GA)
 
-![Searcher 1](images/searcher1.png)
+![Searcher 1](Images/searcher1.png)
 
 GA is used for inclusive scenario (e.g. general entry to a premise). 
 The search space for each establishment is in 2D grid. 
@@ -132,7 +132,7 @@ In order to avoid calculating all possible permutation, GA is used.
 Figure below depicts the usage of fitness function that sums up fitness score. 
 The fitness score is flipped to negative if threshold (maximum capacity) is exceeded. 
 
-![Searcher 2](images/searcher2.png)
+![Searcher 2](Images/searcher2.png)
 
 The actual implementation's *n population* is the total request on a particular day. 
 Default batch size is 20. Default *crossover* and *selection* point are at half or batch size. 
