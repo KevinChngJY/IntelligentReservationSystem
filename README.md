@@ -357,7 +357,7 @@ The percentage out of *n_total* that the patron query terminates at.
 The termination is last Action by IRA. For more details of Action, see section L. 
 
 For example, for establishment *bestplc5637* reporting period *20/11/06*, out of total *515* patron queries, *39.029126213592235* percents terminates at *OversizedGroup*. 
-Meaning, on Nov 6 around 201 inquires (~39%) to reserve for a group greater than allowed group size.    
+Meaning, on Nov 6 around 201 queries (~39%) are to reserve for a group larger than allowed group size.    
 
 Patrons may use *CheckReservation* intent to check for their reservation status.  
 ```
