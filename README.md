@@ -8,7 +8,15 @@
      style="float: left; margin-right: 0px;" />
 
 ---
-## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
+
+## SECTION 2 : Poster
+## Intelligent Reservation System
+
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Poster.jpeg"
+     style="float: left; margin-right: 0px;" />
+
+---
+## SECTION 3 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 
 In the wake of coronavirus pandemic, social distancing enforcement is a must. Establishments (e.g. shops, offices, clinics, training/education centres, etc.) must operate at reduced capacity to keep patrons adequately apart. Unfavourable lines/crowd may form at the entrance which poses transmission risk. Hence, establishment must accept reservations in order to optimize capacity while ensuring safety as well as saving time for patrons. 
 
@@ -19,7 +27,7 @@ Agent interacts with patrons in real-time through a chatbot. Interaction may be 
 Every hit (a request: new/change/cancellation/query) could be registered. At the end of a period, a report will be produced. From the report, various analytical and intelligent approaches may be used to understand patron/market behaviour (Knowledge Discovery). Beyond pandemic, the solution may continue to provide business value as it may be configured to original capacity or even an expansion of business. 
 
 ---
-## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
+## SECTION 4 : CREDITS / PROJECT CONTRIBUTION
 
 | Official Full Name  |  Work Items (Who Did What) | Email (Optional) |
 | :------------ | :-----------------------|:----------------|
@@ -28,12 +36,12 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 | Kevin Chng Jun Yan | Django Backend, Frontend, Database Design | kevinchng@hotmail.com |
 
 ---
-## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
+## SECTION 5 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
 [![INTELLIGENT EMPLOYEE SCHEDULER]()
 
 ---
-## SECTION 5 : USER GUIDE TO RUN THE INTEGRATED SYSTEM IN LOCAL MACHINE
+## SECTION 6 : USER GUIDE TO RUN THE INTEGRATED SYSTEM IN LOCAL MACHINE
 
 In order to run integrated system in local machine, you have to 
 
@@ -60,7 +68,7 @@ In your Anaconda prompt,
  
  
 ---
-## SECTION 6 : USER GUIDE TO RUN RULES ENGINE
+## SECTION 7 : USER GUIDE TO RUN RULES ENGINE
 Other than running the integrated system in local host, you are also allowed to merely run our rule engine for you to understand the mechanism behind our scheduling process.
 
 #### Rules Engine
@@ -176,7 +184,7 @@ List of rules that business user may choose to build a sequence is explained bel
 
 
 ---
-## SECTION 7 : PROJECT REPORT / PAPER
+## SECTION 8 : PROJECT REPORT / PAPER
 
 [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
