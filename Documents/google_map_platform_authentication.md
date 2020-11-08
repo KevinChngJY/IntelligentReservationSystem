@@ -8,7 +8,7 @@
 ![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/google_map1.png) 
 
 ### Step 3 Create New Project<br>
-![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/tree/main/Images/google_map2.png) 
+![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/google_map2.png) 
 
 ### Step 4 Enable API Service for your New Project
 MAP Static API      : https://console.cloud.google.com/marketplace/product/google/static-maps-backend.googleapis.com?project=irs-nus
@@ -16,6 +16,6 @@ MAP JavaScript API  : https://console.cloud.google.com/marketplace/product/googl
 
 ### Step 4 Set up API Credential<br>
 Go To Credentials, create API Key, select HTTP referrers (web sites), paste your ngrok domain as follows: <br>
-![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/tree/main/Images/google_map3.png) 
+![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/google_map3.png) 
 
 (Remember to put * infront and behind your ngrok domain)
