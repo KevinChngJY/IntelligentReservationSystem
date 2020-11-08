@@ -21,5 +21,5 @@ Go To Credentials, create API Key, select HTTP referrers (web sites), paste your
 (Remember to put * infront and behind your ngrok domain)
 
 ### Step 6 Copy google Map Key<br>
-It is required to configure django files
+It is required to configure django files <br>
 ![alt text](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/google_map4.png) 
