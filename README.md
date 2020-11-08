@@ -622,10 +622,3 @@ Action returns string message as response.
 [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
 ---
-## SECTION 9 : Mapped System, Functuinalities against knowledge
-
-| Courses  |  Functiionalities | Mapped Knowledge |
-| :------------ | :-----------------------|:----------------|
-| Machine Reasoning |  |  |
-| Reasoning System |  |  |
-| Cognitive System | Google Diaglowflow |  |
