@@ -33,14 +33,30 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 |                 | Animani Porchalai Pte ltd |              | Rajamanickam Hamsamalini |
 |                 | TechSource System Pte Ltd |              | Kevin Chng Jun Yan |
 | Date of Project Approval | Aug-17 | Last Revision Date | Oct-19|
-| Contribution to Business Strategy| With Intelligent Reservation Agent, the Patron is able to
-1. Book a reservation
-2. Change Reservation date to a new date
-3. Cancel Reservation
-4. Check Reservation
-5. Know the company details
-These activities are carried out with guided approach by the app & Bot making the Patron life easier.
- | | |
+| Contribution to Business Strategy| With Intelligent Reservation Agent, the Patron is able to| | |
+| | 1. Book a reservation| | |
+| | 2. Change Reservation date to a new date | | |
+| | 3. Cancel Reservation | | |
+| | 4. Check Reservation | | |
+| | 5. Know the company details. These activities are carried out with guided approach by the app & Bot making the Patron life easier.| | |
+| | On the other hand, the establishment can track their customer’s visit through the analytics report generated based on reservations made. The Establishment will be able to cater to customers with Safety procedures especially in this Pandemic situation| | |
+| | | | |
+| Options Considered | For Restaurant | | |
+| | For Shops | | |
+| | For Training Center and Customer Meeting | | |
+| | | | |
+| Benefits | 1. Saving Labour cost | | |
+| | 2. Able to plan the staff shifts ahead and Attend to customers need in the given Timeframe. | | |
+| | 3. Better hospitality delivered to customers with peace. | | |
+| | 4. For Restaurant: Pre-booking enables to prepare the kitchen to cater to number of visitors | | |
+| | 5. For Jewellery Merchant: Attend the regular customers with their expected design. The purpose of customers may vary from purchase, sales or repair work. The Staffs can set up the table according to the customer needs. | | |
+| | 6. No queuing of customers can be experienced. | | |
+| | 7. Customers can also plan their day accordingly with the reserved timeline.| | |
+| Future Scope | Purpose of reservation. For Restaurant: Birthday, Anniversary, Team meeting. For Jewellery Shop: Purchase, Sales, Repair work| | |
+| Timescales | 3 months | | |
+| Costs | FOC | | |
+
+
  
 
 ---
