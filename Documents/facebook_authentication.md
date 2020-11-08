@@ -26,9 +26,9 @@ Save the changes!
 
 Go to Products>Facebook Login>Setting, <br>
 in the column of "Valid OAuth Redirect URIs", paste the 3 links below into the column : <br>
-https://<your own ngrok link>/intelligentreservationagent/login/ <br>
-https://<your own ngrok link>/intelligentreservationagent/social-auth/complete/facebook <br>
-https://<your own ngrok link>/intelligentreservationagent/home/ <br>
+https://(your own ngrok link)/intelligentreservationagent/login/ <br>
+https://(your own ngrok link)/intelligentreservationagent/social-auth/complete/facebook <br>
+https://(your own ngrok link)/intelligentreservationagent/home/ <br>
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/facebook6.png" width="700" /> <br><br> 
 
 ### Step 4 : Complete! Now copy your App ID and App Secret<br>
