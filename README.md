@@ -178,13 +178,5 @@ List of rules that business user may choose to build a sequence is explained bel
 ---
 ## SECTION 7 : PROJECT REPORT / PAPER
 
-#### Django Workflow (Backend) :
+[Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
-#### Frontend Operation/Logic: [Power Point Slide]()
-
-#### Diaglog flow (Chatbot) : [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
-
-
-#### Rule-based Engine / GA (Algorithm) :
-
----
