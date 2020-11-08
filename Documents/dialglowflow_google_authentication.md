@@ -1,4 +1,4 @@
-##### Dialogflow – Google Authentication
+## Dialogflow – Google Authentication
 
 In Dialogflow's console, go to settings and under the general tab, you'll see the project ID section with a Google Cloud link to open the Google Cloud console. Open Google Cloud.
 In the Cloud console, go to the menu icon ☰ > APIs & Services > Credentials
