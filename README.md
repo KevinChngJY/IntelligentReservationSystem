@@ -28,7 +28,7 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 
 ### Business Case (Project Business Case)
 | Project Name  |  Intelligent Reservation Agent |  | |
-| :------------ | :-----------------------|:----------------|:----------------|
+| :------------ | :----------------------------------------------|:----------------|:----------------|
 | Project Sponsor | Anjana Kitchin            | Project Team | Januwar Hadi |
 |                 | Animani Porchalai Pte ltd |              | Rajamanickam Hamsamalini |
 |                 | TechSource System Pte Ltd |              | Kevin Chng Jun Yan |
@@ -44,7 +44,6 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 | Options Considered | For Restaurant | | |
 | | For Shops | | |
 | | For Training Center and Customer Meeting | | |
-| | | | |
 | Benefits | 1. Saving Labour cost | | |
 | | 2. Able to plan the staff shifts ahead and Attend to customers need in the given Timeframe. | | |
 | | 3. Better hospitality delivered to customers with peace. | | |
