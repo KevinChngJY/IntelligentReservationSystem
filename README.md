@@ -44,7 +44,7 @@ In order to run integrated system in local machine, you have to
 please follow the guidance below to set up the above 3 prerequisite for running our integrated system in local machine
 | No | Area  |  Reference |
 | :--------- | :--------------------------------|:----------------|
-| 1 | Ngrok Activation | [Reference](https://github.com/user/repo/blob/branch/ngrok.md) |
+| 1 | Ngrok Activation | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/ngrok_activation.md) |
 | 2 | Facebook Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
 | 3 | Google Map Platform Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
 | 4 | Diaglogflow Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
