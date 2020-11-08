@@ -4,7 +4,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Intelligent Reservation System
 
-<img src="Title2.jpg"
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Profile.png"
      style="float: left; margin-right: 0px;" />
 
 ---
