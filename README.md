@@ -73,7 +73,6 @@ Other than running the integrated system in local host, you are also allowed to 
 
 #### Rules Engine
 
-
 Rules and its attribute classes are contained in **ira.py**. 
 Two classes that may be used are: 
 1.  `Agent` class that handles all interactions with rules.
@@ -121,12 +120,12 @@ In order to do anything with a reservation, *patron* and *establishment* identif
 ```
 > util.load_table('dummy_pat', 'dummy.db')
 ```
-![Patrons Table](Images/patrons.png)
+![Patrons Table](patrons.png)
 
 ```
 > util.load_table('dummy_est', 'dummy.db')
 ```
-![Establishment Table](Images/establishments.png)
+![Establishment Table](establishments.png)
 
 Arguments *dummy_pat*, *dummy_est* and *dummy.db* are default patron table name and default database name. 
 
@@ -543,8 +542,6 @@ Action returns string message as response.
 28. TOEarlierThanTI: 'Exit time should not be earlier than entry time'
 
 \* Terminates session
-
-
 
 
 ---
