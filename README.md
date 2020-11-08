@@ -33,7 +33,15 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 |                 | Animani Porchalai Pte ltd |              | Rajamanickam Hamsamalini |
 |                 | TechSource System Pte Ltd |              | Kevin Chng Jun Yan |
 | Date of Project Approval | Aug-17 | Last Revision Date | Oct-19|
-| Contribution to Business Strategy| With Intelligent Reservation<br>Agent, Agent, the Patron is able to<br> | | 
+| Contribution to Business Strategy| With Intelligent Reservation Agent, the Patron is able to
+1. Book a reservation
+2. Change Reservation date to a new date
+3. Cancel Reservation
+4. Check Reservation
+5. Know the company details
+These activities are carried out with guided approach by the app & Bot making the Patron life easier.
+ | | |
+ 
 
 ---
 
