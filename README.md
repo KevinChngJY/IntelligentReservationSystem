@@ -41,15 +41,15 @@ In order to run integrated system in local machine, you have to
 2) Enable "Facebook Authentication", "Google Map Platform Authentication" and "Diaglowflow Google Authentication"
 3) Install required packages for your backend django
 
-#### Ngrok Activation : [a link](https://github.com/user/repo/blob/branch/ngrok.md)
-
-#### Facebook Authentication
-
-#### Google Map Platform Authentication
-
-#### Diaglogflow Authentication
-
-##### Dialogflow – Google Authentication : [a link](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md)
+please follow the guidance below to set up the above 3 prerequisite for running our integrated system in local machine
+| No | Area  |  Reference |
+| :--------- | :--------------------------------|:----------------|
+| 1 | Ngrok Activation | [Reference](https://github.com/user/repo/blob/branch/ngrok.md) |
+| 2 | Facebook Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
+| 3 | Google Map Platform Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
+| 4 | Diaglogflow Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
+| 5 | Dialogflow – Google Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
+| 6 | Install Required Packages | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
  
 ---
 ## SECTION 6 : USER GUIDE TO RUN RULES ENGINE
