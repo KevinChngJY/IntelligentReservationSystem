@@ -412,7 +412,7 @@ Entries in *hourly* column are hourly outlook, in json string format. Each may b
 
 ![Rsvp Rep 2](Images/rsvrep2.png)
 
-Here the business user can do association analysis to discover new knowledge relating to reservations. 
+Here the business user can do association analysis to discover new knowledge relating to reservations.
 
 
 #### I. Query Report & Reservation Status Check
