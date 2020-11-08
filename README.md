@@ -39,7 +39,11 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 ---
 ## SECTION 5 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![IRA Chatbot](https://www.youtube.com/watch?v=PFnCljCjR_k)
+### Overview
+[![Commercial Video](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/commercialvideo.png)](https://www.youtube.com/watch?v=Dh6HqF-42vk&feature=youtu.be)
+
+### IRA Workflow
+[![IRA Chatbot](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/chatbot1.png)](https://www.youtube.com/watch?v=PFnCljCjR_k)
 
 ---
 ## SECTION 6 : USER GUIDE TO RUN THE INTEGRATED SYSTEM IN LOCAL MACHINE
