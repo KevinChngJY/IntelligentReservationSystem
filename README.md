@@ -49,6 +49,7 @@ please follow the guidance below to set up the above 3 prerequisite for running 
 | 3 | Google Map Platform Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/google_map_platform_authentication.md) |
 | 4 | Dialogflow – Google Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
 | 5 | Install Required Packages | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/install_django_package.md) |
+| 6 | Configure Django Files | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/configure_django_file.md) |
  
 ---
 ## SECTION 6 : USER GUIDE TO RUN RULES ENGINE
