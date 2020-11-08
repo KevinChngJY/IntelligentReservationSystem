@@ -78,14 +78,14 @@ Other than running the integrated system in local host, you are also allowed to 
 Rules Engine is structured as to separate business logic from the IT system. 
 Business logic and database configuration may be modified in **config.ini**.  
 
-Business logic goes by intent. Each intent has it own business logic rules sequence. 
+Business logic is segmented by intent. Each intent has it own business logic rules sequence. 
 Sequence is numbered from 1 and by increment of 1. 
 
-\# = <Rule>?<Action-True>:<Action-False>
+\# =\ <Rule\>?\<Action-True\>:\<Action-False\>
 
-If a Rule executes `True`, <Action-True> will be returned, <Action-False> is otherwise.  
-If an <Action> is not stated, IRA will proceed to execute next rule. 
-If there is an integer in place of <Action>, execution will jump to skip to as many times as the integer number.  
+If a Rule executes `True`, \<Action-True\> will be returned, \<Action-False\> is otherwise.  
+If an <Action> is not stated, IRA will proceed to execute next rule in sequence. 
+If there is an integer in place of \<Action\>, execution will jump to skip to as many times as the integer number.  
 
 Refer to section K for example. 
 
