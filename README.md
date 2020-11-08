@@ -50,6 +50,14 @@ please follow the guidance below to set up the above 3 prerequisite for running 
 | 4 | Dialogflow – Google Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
 | 5 | Install Required Packages | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/install_django_package.md) |
 | 6 | Configure Django Files | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/configure_django_file.md) |
+
+Now you have completed all prerequisite,
+In your Anaconda prompt,
+1) activate the virtual environment "conda activate irs_project"
+2) Go to the downloaded path of project code, "cd path_of_your_project_code"
+3) run the django server, "python manage.py runserver" <br>
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/django_run.png" width="700" /> <br>
+ 
  
 ---
 ## SECTION 6 : USER GUIDE TO RUN RULES ENGINE
