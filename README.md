@@ -168,7 +168,7 @@ Optional: To install jupyter-lab from virtual environment.
 
 `(<env>)$ conda install jupyterlab -y`
 
-Rules Engine Sections: 
+Guide sections: 
 1. Section B, C, D cover reservation relevant to exclusive scenarios (e.g. restaurant, where group of patrons is allocated exclusive space for their own group).  
 2. Section D, E, F cover reservation relevant to inclusive situation (e.g. mall or other large communal space, where as many patrons may be admitted as long as within capacity threshold as any given time).  
 3. Section G, H, I: Reporting (Knowledge Discovery)
