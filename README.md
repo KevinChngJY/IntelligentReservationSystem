@@ -71,7 +71,7 @@ In your Anaconda prompt,
 ## SECTION 7 : USER GUIDE TO RUN RULES ENGINE
 Other than running the integrated system in local host, you are also allowed to merely run our rule engine for you to understand the mechanism behind our scheduling process.
 
-### Rules Engine  & Assignment System:  
+### Rules Engine  & Reservation Allocation System:  
 
 #### Rules Engine
 
@@ -99,7 +99,7 @@ Keyword arguments *time_in* and *n_person* are to indicate what time and number 
 Subsequent interaction requires contextual *selection* keyword argument. 
 
 
-#### Assignment System: 
+#### Reservation Allocation System: 
 
 A. Searcher
 
