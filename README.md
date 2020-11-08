@@ -9,7 +9,7 @@
 
 ---
 
-## SECTION 2 : Poster
+## SECTION 2 : POSTER
 ## Intelligent Reservation System
 
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Poster.jpeg"
@@ -25,6 +25,15 @@ We propose that the reservation be handled by a software agent. The intelligent 
 Agent interacts with patrons in real-time through a chatbot. Interaction may be bidirectional, as the knowledge base (KB) may be provided from establishment (e.g. informational KB or conditional KB; establishment may require patrons to show up with certain dress code, bring certain documents, admittance procedures that must be known beforehand, etc.) – hence, a solution. The solution may be tailored to suit applications in different areas (e.g. hospitality, retail, office, education, healthcare, etc.). 
 
 Every hit (a request: new/change/cancellation/query) could be registered. At the end of a period, a report will be produced. From the report, various analytical and intelligent approaches may be used to understand patron/market behaviour (Knowledge Discovery). Beyond pandemic, the solution may continue to provide business value as it may be configured to original capacity or even an expansion of business. 
+
+### Business Case (Project Business Case)
+| Project Name  |  Intelligent Reservation Agent |  | |
+| :------------ | :-----------------------|:----------------|:----------------|
+| Project Sponsor | Anjana Kitchin            | Project Team | Januwar Hadi |
+|                 | Animani Porchalai Pte ltd |              | Rajamanickam Hamsamalini |
+|                 | TechSource System Pte Ltd |              | Kevin Chng Jun Yan |
+| Date of Project Approval | Aug-17 | Last Revision Date | Oct-19|
+| Contribution to Business Strategy| With Intelligent Reservation<br>Agent, Agent, the Patron is able to<br> | | 
 
 ---
 
