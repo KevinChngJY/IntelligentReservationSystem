@@ -263,7 +263,7 @@ In any case where the `response` deviates from what shown in this document, refe
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![New 1](Images/new1.png)
+![New 1](Miscellaneous/Images/new1.png)
 
 As IRA offers options, patron chooses one as selection.
 
@@ -272,7 +272,7 @@ As IRA offers options, patron chooses one as selection.
 > response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 > print(response[1])
 ```
-![New 2](Images/new2.png)
+![New 2](Miscellaneous/Images/new2.png)
 
 As IRA returns tuple, the confirmation message is at index 1. 
 
