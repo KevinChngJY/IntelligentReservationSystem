@@ -4,7 +4,7 @@
 Anaconda https://www.anaconda.com/
 
 Open Anaconda prompt, type "conda create --name irs_project"
-<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/install_packages1.png" width="700" /> <br><br>
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/install_packages1.png" width="700" /> <br><br>
 
 ### Step 2 : Activate Virtual Environment 
 In Anaconda prompt, type "conda activate irs_project" to activate virtual Environment
