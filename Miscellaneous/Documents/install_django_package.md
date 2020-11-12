@@ -11,7 +11,7 @@ In Anaconda prompt, type "conda activate irs_project" to activate virtual Enviro
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/install_packages3.png" width="700" /> <br><br>
 
 ### Step 3 : Download requirements.txt and Install all the relevant packages
-Download Link : https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Intelligence_Reservation_Agent%20(Project-Code)/requirements.txt
+Download Link : https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Code/Intelligence_Reservation_Agent%20(Project-Code)/requirements.txt
 In Anaconda prompt, type "conda install --file requirements.txt"<br>
 <img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/install_packages1.png" width="700" /> <br><br>
 
