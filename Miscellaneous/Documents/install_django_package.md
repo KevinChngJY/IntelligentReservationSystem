@@ -13,7 +13,7 @@ In Anaconda prompt, type "conda activate irs_project" to activate virtual Enviro
 ### Step 3 : Download requirements.txt and Install all the relevant packages
 Download Link : https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Code/Intelligence_Reservation_Agent%20(Project-Code)/requirements.txt
 In Anaconda prompt, type "conda install --file requirements.txt"<br>
-<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/install_packages1.png" width="700" /> <br><br>
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/install_packages1.png" width="700" /> <br><br>
 
 ### Step 4 : Install other relevant packages from pip
 In Anaconda prompt, type "pip install django-sslserver dialogflow"
