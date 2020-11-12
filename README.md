@@ -4,7 +4,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Intelligent Reservation System
 
-<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Profile.png"
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/Profile.png"
      style="float: left; margin-right: 0px;" />
 
 ---
@@ -12,7 +12,7 @@
 ## SECTION 2 : POSTER
 ## Intelligent Reservation System
 
-<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/Poster.jpeg"
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/Poster.jpeg"
      style="float: left; margin-right: 0px;" />
 
 ---
@@ -72,10 +72,10 @@ Every hit (a request: new/change/cancellation/query) could be registered. At the
 ## SECTION 5 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
 ### Overview
-[![Commercial Video](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/commercialvideo.png)](https://www.youtube.com/watch?v=Dh6HqF-42vk&feature=youtu.be)
+[![Commercial Video](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/commercialvideo.png)](https://www.youtube.com/watch?v=Dh6HqF-42vk&feature=youtu.be)
 
 ### IRA Workflow
-[![IRA Chatbot](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/chatbot1.png)](https://www.youtube.com/watch?v=PFnCljCjR_k)
+[![IRA Chatbot](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/chatbot1.png)](https://www.youtube.com/watch?v=PFnCljCjR_k)
 
 ---
 ## SECTION 6 : USER GUIDE TO RUN THE INTEGRATED SYSTEM IN LOCAL MACHINE
@@ -89,19 +89,19 @@ In order to run integrated system in local machine, you have to
 please follow the guidance below to set up the above 3 prerequisite for running our integrated system in local machine
 | No | Area  |  Reference |
 | :--------- | :--------------------------------|:----------------|
-| 1 | Ngrok Activation | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/ngrok_activation.md) |
-| 2 | Facebook Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/facebook_authentication.md) |
-| 3 | Google Map Platform Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/google_map_platform_authentication.md) |
-| 4 | Dialogflow – Google Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/dialglowflow_google_authentication.md) |
-| 5 | Install Required Packages | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/install_django_package.md) |
-| 6 | Configure Django Files | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/configure_django_file.md) |
+| 1 | Ngrok Activation | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/ngrok_activation.md) |
+| 2 | Facebook Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/facebook_authentication.md) |
+| 3 | Google Map Platform Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/google_map_platform_authentication.md) |
+| 4 | Dialogflow – Google Authentication | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/dialglowflow_google_authentication.md) |
+| 5 | Install Required Packages | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/install_django_package.md) |
+| 6 | Configure Django Files | [Reference](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/configure_django_file.md) |
 
 Now you have completed all prerequisite,
 In your Anaconda prompt,
 1) activate the virtual environment "conda activate irs_project"
 2) Go to the downloaded path of project code, "cd path_of_your_project_code"
 3) run the django server, "python manage.py runserver" <br>
-<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Images/django_run.png" width="700" /> <br>
+<img src="https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Images/django_run.png" width="700" /> <br>
  
  
 ---
@@ -143,7 +143,7 @@ The `Searcher` class is used for exclusive scenarios (e.g. restaurants).
 It bins patron's `time_in` request in a location in search space (the stacked cubes). 
 The location is the a small cube (time slot 4, day 1, week 1), as shown in picture in example below. 
 
-![Searcher 1](Images/searcher1.png)
+![Searcher 1](Miscellaneous/Images/searcher1.png)
 
 Distance along time slot axis costs less that day axis that costs less than week axis. 
 This is in order to give preference (bias) to slots as compared to days as compared to weeks. 
@@ -152,7 +152,7 @@ If time slot 4, day 1, week 1 (4/1/1) is available, the ideal situation is reach
 Nevertheless, `Searcher` still captures all locations that is under cost threshold -- *thresh*, then sort it cost-wise from low to high. 
 The sorted locations is what patrons receive as proposed time slots. It is when the rules action `OfferSlots` is invoked. 
 
-![Searcher 2](Images/searcher2.png)
+![Searcher 2](Miscellaneous/Images/searcher2.png)
 
 In case when, certain locations already filled up (ones that blacked out), patrons will receive time slot offer most relevant (close) to their request. 
 In example picture above, `Searcher` will propose 5/1/1, 4/2/1, 4/2/2, 4/3/1, ... (from lowest to highest cost). 
@@ -161,7 +161,7 @@ This search space, is exclusive for each establishment's subloc. The bottom of t
 
 B. Genetic Algorithm (GA)
 
-![Searcher 1](Images/genetic1.png)
+![Searcher 1](Miscellaneous/Images/genetic1.png)
 
 GA is used for inclusive scenario (e.g. general entry to a premise). 
 The search space for each establishment is in 2D grid. 
@@ -169,7 +169,7 @@ In order to avoid calculating all possible permutation, GA is used.
 Figure below depicts the usage of fitness function that sums up fitness score. 
 The fitness score is flipped to negative if threshold (maximum capacity) is exceeded. 
 
-![Searcher 2](Images/genetic2.png)
+![Searcher 2](Miscellaneous/Images/genetic2.png)
 
 The actual implementation's *n population* is the total request on a particular day. 
 Default batch size is 20. Default *crossover* and *selection* point are at half or batch size. 
@@ -228,12 +228,12 @@ In order to do anything with a reservation, *patron* and *establishment* identif
 ```
 > util.load_table('dummy_pat', 'dummy.db')
 ```
-![Patrons Table](Images/patrons.png)
+![Patrons Table](Miscellaneous/Images/patrons.png)
 
 ```
 > util.load_table('dummy_est', 'dummy.db')
 ```
-![Establishment Table](Images/establishments.png)
+![Establishment Table](Miscellaneous/Images/establishments.png)
 
 Arguments *dummy_pat*, *dummy_est* and *dummy.db* are default patron table name and default database name. 
 
@@ -289,7 +289,7 @@ Changing reservation requires matching intent as in **config.ini**. Default is *
 > response = Agent(session, intent, patron, establishment).check_rules()
 > print(response[1])
 ```
-![Change 1](Images/change1.png)
+![Change 1](Miscellaneous/Images/change1.png)
 
 Patrons would choose which existing reservation he/she would like to change. Option (1) is the one created from previous step (section B). Pass the selection as keyword argument *selection*.   
 ```
@@ -297,7 +297,7 @@ Patrons would choose which existing reservation he/she would like to change. Opt
 > response = Agent(session, intent, patron, establishment, selection=selection1).check_rules()
 > print(response[1])
 ```
-![Change 2](Images/change2.png)
+![Change 2](Miscellaneous/Images/change2.png)
 
 IRA asks time and number of persons the reservation would need to be changed for. Pass them as respective keyword arguments. 
 ```
@@ -306,7 +306,7 @@ IRA asks time and number of persons the reservation would need to be changed for
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![Change 3](Images/change3.png)
+![Change 3](Miscellaneous/Images/change3.png)
 
 IRA responds with list of time slots, and patron to choose from the proposed list. 
 
@@ -315,7 +315,7 @@ IRA responds with list of time slots, and patron to choose from the proposed lis
 > response = Agent(session, intent, patron, establishment, selection=selection2).check_rules()
 > print(response[1])
 ```
-![Change 4](Images/change4.png)
+![Change 4](Miscellaneous/Images/change4.png)
 
 IRA responds with success message. 
 
@@ -331,7 +331,7 @@ Cancelling reservation requires matching intent as in **config.ini**. Default is
 > response = Agent(session, intent, patron, establishment).check_rules()
 > print(response[1])
 ```
-![Cancel 1](Images/cancel1.png)
+![Cancel 1](Miscellaneous/Images/cancel1.png)
 
 IRA responds with list of existing reservations. Patron is to choose which to cancel.
 ```
@@ -339,7 +339,7 @@ selection = '20/11/11_13:00'
 response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 print(response[1])
 ```
-![Cancel 2](Images/cancel2.png)
+![Cancel 2](Miscellaneous/Images/cancel2.png)
 
 IRA confirms that reservation has been successfully cancelled. 
 
@@ -358,7 +358,7 @@ Establishments without sublocs accept ballots at least one day in advance. In or
 > response = Agent(session, intent, patron, establishment, time_in=time_in, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![Ballot 1](Images/ballot1.png)
+![Ballot 1](Miscellaneous/Images/ballot1.png)
 
 IRA responds with suggestion that fits into establishment's one time slot. 
 ```
@@ -366,7 +366,7 @@ selection = '20/11/12_12:00'
 response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 print(response[1])
 ```
-![Ballot 2](Images/ballot2.png)
+![Ballot 2](Miscellaneous/Images/ballot2.png)
 
 As patron confirms with *selection*, IRA sends receipt message for acceptance of request. See section G for detail on how the request is confirmed or rejected. 
 
@@ -379,14 +379,14 @@ Alternatively, patron may indicate *time_out* for a request for block of multipl
 > response = Agent(session, intent, patron, establishment, time_in=time_in, time_out=time_out, n_person=n_person).check_rules()
 > print(response[1])
 ```
-![Ballot 3](Images/ballot3.png)
+![Ballot 3](Miscellaneous/Images/ballot3.png)
 
 ```
 > selection = '20/11/12_12:30'
 > response = Agent(session, intent, patron, establishment, selection=selection).check_rules()
 > print(response[1])
 ```
-![Ballot 4](Images/ballot4.png)
+![Ballot 4](Miscellaneous/Images/ballot4.png)
 
 
 #### F. Waitlist Reservation Change and Cancellation
@@ -400,7 +400,7 @@ Once a successful request is submitted, waitlisted request status is indicated a
 ```
 > util.load_table('dummy_rsv', 'dummy.db')
 ```
-![On Hold](Images/on_hold.png)
+![On Hold](Miscellaneous/Images/on_hold.png)
 
 In order to handle waitlisted request, a service must be subscribed to run periodically (daily). It is for an algorithm to assign each waitlisted request a confirmation or rejection. This is where `HouseKeeping` class is useful. 
 ```
@@ -408,9 +408,9 @@ In order to handle waitlisted request, a service must be subscribed to run perio
 > 
 > HouseKeeping().genetic_algorithm_check(all_days=True, plot=True)
 ```
-![GA1](Images/ga1.png)
-![GA2](Images/ga2.png)
-![GA3](Images/ga3.png)
+![GA1](Miscellaneous/Images/ga1.png)
+![GA2](Miscellaneous/Images/ga2.png)
+![GA3](Miscellaneous/Images/ga3.png)
 
 If *all_days* set to `True`, the algorithm will run for all entries in the reservation table. If `False`, it will only run for the next business day. Default `False`. 
 If *plot* is set to `True`, it will print the progress and plot fitness and other metrics. Default `False`. 
@@ -419,7 +419,7 @@ Refer to section H for more details.
 ```
 > util.load_table('dummy_rsv', 'dummy.db')
 ```
-![Unsuccessful](Images/unsuccessful.png)
+![Unsuccessful](Miscellaneous/Images/unsuccessful.png)
 
 If the algorithm finds solution, each request will be reassigned from *on-hold* to as either *confirmed* or *unsuccessful*. Otherwise, all reservation on that day will be assigned as *walk-in*. 
 
@@ -437,12 +437,12 @@ The report is stored in reservation report table
 ```
 > util.load_table('dummy_rsv_report', 'dummy.db')
 ```
-![Rsvp Rep 1](Images/rsvrep1.png)
+![Rsvp Rep 1](Miscellaneous/Images/rsvrep1.png)
 
 Source *ga* indicates that the report is generated by `HouseKeeping().genetic_algorithm_check()`, *sl* indicates `HouseKeeping().linear_check()`.
 Entries in *hourly* column are hourly outlook, in json string format. Each may be tabulated as shown below.  
 
-![Rsvp Rep 2](Images/rsvrep2.png)
+![Rsvp Rep 2](Miscellaneous/Images/rsvrep2.png)
 
 Here the business user can do association analysis to discover new knowledge relating to reservations.
 
@@ -459,7 +459,7 @@ Below is sample of what query report looks like.
 ```
 > util.load_table('dummy_qry_report', 'dummy.db')
 ```
-![Query Report](Images/qryrep.png)
+![Query Report](Miscellaneous/Images/qryrep.png)
 
 *n_total* indicates the number of queries an establishment receive in a day. 
 Values in *DuplicateExist*, *OversizedGroup*, *PlaceNotAvail*, and so fort indicates percentage. 
@@ -481,7 +481,7 @@ Patrons may use *CheckReservation* intent to check for their reservation status.
 > response = Agent(session, intent, patron, establishment).check_rules()
 > print(response[1])
 ```
-![Rsvp Check](Images/check.png)
+![Rsvp Check](Miscellaneous/Images/check.png)
 
 IRA would give an insight in case the waitlisted reservation eventually becomes *unsuccessful*. It advises patron the alternatives time for walk-in.  
 
@@ -660,7 +660,7 @@ Action returns string message as response.
 ---
 ## SECTION 8 : WORKFLOW GUI GUIDANCE
 
-GUI Workflow and functionalities : [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
+GUI Workflow and functionalities : [Power Point Slide](https://github.com/KevinChngJY/IntelligentReservationSystem/blob/main/Miscellaneous/Documents/Intelligent%20reservation%20agent%20-%20Bot.pdf)
 
 
 ---
