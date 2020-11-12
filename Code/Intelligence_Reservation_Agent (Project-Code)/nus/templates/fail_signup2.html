@@ -1,0 +1,21 @@
+<!-- templates/login.html -->
+
+ {% extends 'base.html' %}
+ {% block title %} Error : Email Address{% endblock %}
+ {% block content %}
+ <div class="row">
+     <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label> Hi {{ business_person}}, email Address {{ business_email }} has been used. Please contact kevinchng@hotmail.com if you didn't register with us before.</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <center><button type="submit" class="btn btn-fill btn-primary"><a href="{{ngrok_address2}}intelligentreservationagent/login?next=/intelligentreservationagent/">Go back</a></button></center>
+                  </div>
+        </div>
+ </div>
+ {% endblock %}
